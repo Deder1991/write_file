@@ -6,3 +6,7 @@ while True:
 	price = input('請輸入價格:')
 	products.append([food, price])
 print(products)
+
+with open('products.csv', 'w') as f:
+	for line in products:
+		f.write(line[0] + ',' + line[1] + '\n')
