@@ -27,6 +27,8 @@ while count > 0:
 	# products.append(p)
 	count -=1
 print(products)
+for p in products:
+	print('商品名稱:', p[0],'價格:', p[1])
 
 with open('products.csv', 'w', encoding = 'utf-8') as f:
 	f.write('商品名稱,價格\n')
